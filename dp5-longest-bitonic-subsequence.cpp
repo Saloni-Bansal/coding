@@ -12,7 +12,6 @@ using namespace std;
 
 int lbs(int A[], int n) { //longest_bitonic_subsequence
 int l[n];
-
 int d[n];
 for(int i=0;i<n;i++)
 { l[i]=1;
@@ -25,9 +24,6 @@ for(int i=1;i<n;i++)
             l[i]=l[j]+1;
         }//inner for
     }//outer for
-
-
-
 //then find the longest decreasing subsequence
 for(int i=n-2;i>=0;i--)
     {for(int j=n-1;j>i;j--)
@@ -43,10 +39,8 @@ for(int i=n-2;i>=0;i--)
     for(int i=0;i<n;i++)
     if(max<(l[i]+d[i]-1))
     max=l[i]+d[i]-1;
-
     return max;
 }
-
 //driver program
 int main()
 {
