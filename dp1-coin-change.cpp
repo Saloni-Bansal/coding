@@ -1,4 +1,5 @@
 // C++ program for coin change problem.
+
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -23,7 +24,7 @@ int count( int S[], int m, int n )
 // Driver Code
 int main()
 {
-	int arr[] = {3, 5, 10};  //coins available
+	int arr[] = {1, 5, 10};  //coins available
 	int m = sizeof(arr)/sizeof(arr[0]); //number of coins
 	int n = 20; //Target number
 	cout << count(arr, m, n); // Counting the total number of ways
